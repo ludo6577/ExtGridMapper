@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39C6E771-F7DD-4799-8DC2-7F2F2E107D71}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Carrefour.Clearance.UI</RootNamespace>
+    <AssemblyName>Carrefour.Clearance.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug Oracle|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug Oracle\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DropDownHelper.cs" />
+    <Compile Include="GridHelper.cs" />
+    <Compile Include="Grid\Attributes\GridColumnKey.cs" />
+    <Compile Include="Grid\Attributes\GridColumnLinkAttribute.cs" />
+    <Compile Include="Grid\Attributes\GridExportToCsvAction.cs" />
+    <Compile Include="Grid\Attributes\GridHeightAttribute.cs" />
+    <Compile Include="Grid\Attributes\GridColumnWidthAttribute.cs" />
+    <Compile Include="Grid\Attributes\GridColumnImageAttribute.cs" />
+    <Compile Include="Grid\Attributes\GridColumnHiddenAttribute.cs" />
+    <Compile Include="Grid\Attributes\GridDisplayTitleAttribute.cs" />
+    <Compile Include="Grid\Attributes\GridColumnClickHandlerAttribute.cs" />
+    <Compile Include="Grid\GridModel.cs" />
+    <Compile Include="PopupJs.cs" />
+    <Compile Include="PopupJsHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-multiselect\.gitignore" />
+    <Content Include="bootstrap-multiselect\dist\css\bootstrap-multiselect.css" />
+    <Content Include="bootstrap-multiselect\dist\js\bootstrap-multiselect.js" />
+    <Content Include="bootstrap-multiselect\docs\css\bootstrap-3.1.1.min.css" />
+    <Content Include="bootstrap-multiselect\docs\css\bootstrap-3.2.0.min.css" />
+    <Content Include="bootstrap-multiselect\docs\css\bootstrap-example.css" />
+    <Content Include="bootstrap-multiselect\docs\css\prettify.css" />
+    <Content Include="bootstrap-multiselect\docs\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap-multiselect\docs\js\bootstrap-3.1.1.min.js" />
+    <Content Include="bootstrap-multiselect\docs\js\bootstrap-3.2.0.min.js" />
+    <Content Include="bootstrap-multiselect\docs\js\jquery-2.1.0.min.js" />
+    <Content Include="bootstrap-multiselect\docs\js\jquery-2.1.1.min.js" />
+    <Content Include="bootstrap-multiselect\docs\js\prettify.js" />
+    <Content Include="bootstrap-multiselect\example.png" />
+    <Content Include="bootstrap-multiselect\Documentation.html" />
+    <Content Include="bootstrap-multiselect\tests\lib\jasmine-2.0.2\boot.js" />
+    <Content Include="bootstrap-multiselect\tests\lib\jasmine-2.0.2\console.js" />
+    <Content Include="bootstrap-multiselect\tests\lib\jasmine-2.0.2\jasmine-html.js" />
+    <Content Include="bootstrap-multiselect\tests\lib\jasmine-2.0.2\jasmine.css" />
+    <Content Include="bootstrap-multiselect\tests\lib\jasmine-2.0.2\jasmine.js" />
+    <Content Include="bootstrap-multiselect\tests\lib\jasmine-2.0.2\jasmine_favicon.png" />
+    <Content Include="bootstrap-multiselect\tests\SpecRunner.html" />
+    <Content Include="bootstrap-multiselect\tests\spec\bootstrap-multiselect.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bootstrap-multiselect\bower.json" />
+    <None Include="bootstrap-multiselect\dist\less\bootstrap-multiselect.less" />
+    <None Include="bootstrap-multiselect\docs\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap-multiselect\docs\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap-multiselect\docs\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap-multiselect\docs\less\bootstrap-example.less" />
+    <None Include="bootstrap-multiselect\LICENSE.md" />
+    <None Include="bootstrap-multiselect\post.php" />
+    <None Include="bootstrap-multiselect\README.md" />
+    <None Include="bootstrap-multiselect\tests\lib\MIT.LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Carrefour.Clearance.Localisation\Carrefour.Clearance.Localization.csproj">
+      <Project>{42a9b900-e732-4f01-9103-572105f6fd77}</Project>
+      <Name>Carrefour.Clearance.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Carrefour.Clearance.Utils\Carrefour.Clearance.Utils.csproj">
+      <Project>{9d869aa0-80d3-4fd9-bc98-9dd7db0b47f2}</Project>
+      <Name>Carrefour.Clearance.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PopUp\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
