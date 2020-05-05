@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Carrefour.Clearance.UI
+namespace UI
 {
     public static class DropDownHelper
     {
